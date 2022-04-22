@@ -1,0 +1,85 @@
+@import 'shoelace_light.css';
+/* https://shoelace.style */
+
+body {
+  font: 16px sans-serif;
+  font-family: var(--sl-font-sans);
+  background-color: var(--sl-color-neutral-100);
+  color: var(--sl-color-neutral-800);
+  padding: 1rem;
+  margin: 0 auto;
+  max-width: 40em;
+}
+
+.title {
+    font-weight: var(--sl-font-weight-light);
+    font-size: var(--sl-font-size-3x-large);
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.mainTabGroup::part(base) {
+    background: var(--sl-color-neutral-100);
+}
+.mainTabGroup::part(nav) {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.subTabGroup::part(base) {
+    background: var(--sl-color-neutral-100);
+}
+.subTabGroup::part(nav) {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.header {
+    font-weight: var(--sl-font-weight-normal);
+    font-size: var(--sl-font-size-x-large);
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.explanation {
+    font-weight: var(--sl-font-weight-normal);
+    font-size: var(--sl-font-size-x-small);
+    font-style: italic;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
+}
+
+.spacer {
+    height: var(--sl-spacing-large);
+}
+
+/* *** TABLE FORMATTING *** */
+
+#rankings {
+  margin: 0 auto;
+}
+
+#rankings thead {
+  background: var(--sl-color-neutral-300);
+  font-weight: var(--sl-font-weight-normal);
+  font-size: var(--sl-font-size-medium);
+}
+#rankings thead tr th {
+  padding: 10px;
+}
+#rankings thead tr th span {
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+}
+
+#rankings tbody tr td {
+  padding: 10px;
+  font-weight: var(--sl-font-weight-normal);
+  font-size: var(--sl-font-size-medium);
+  font-family: var(--sl-font-sans);
+}
